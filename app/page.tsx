@@ -114,7 +114,7 @@ export default function ActivityMonitor() {
               {isActive ? (
                 <div className="flex items-center gap-2 text-green-600">
                   <CheckCircle className="h-5 w-5" />
-                  <span>User is currently working on the document</span>
+                  <span>User is busy with their tasks for the day</span>
                 </div>
               ) : (
                 <div className="flex items-center gap-2 text-red-600">
