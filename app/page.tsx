@@ -10,7 +10,7 @@ import { useToast } from "@/hooks/use-toast"
 export default function ActivityMonitor() {
   const [lastActivity, setLastActivity] = useState<Date>(new Date())
   const [isActive, setIsActive] = useState<boolean>(true)
-  const [currentTask, setCurrentTask] = useState<string>("Word Document")
+  const [currentTask, setCurrentTask] = useState<string>("Alexander Mkandawiri")
   const [activityLog, setActivityLog] = useState<Array<{ time: Date; action: string }>>([])
   const [inactivityThreshold, setInactivityThreshold] = useState<number>(2) // minutes
   const { toast } = useToast()
@@ -97,7 +97,7 @@ export default function ActivityMonitor() {
           <CardContent>
             <div className="flex items-center justify-between mb-4">
               <div>
-                <p className="text-sm text-muted-foreground mb-1">Current Task:</p>
+                <p className="text-sm text-muted-foreground mb-1">Working Remotely:</p>
                 <p className="font-medium">{currentTask}</p>
               </div>
               <Badge variant={isActive ? "default" : "destructive"} className="text-xs">
