@@ -10,7 +10,7 @@ import { useToast } from "@/hooks/use-toast"
 export default function ActivityMonitor() {
   const [lastActivity, setLastActivity] = useState<Date>(new Date())
   const [isActive, setIsActive] = useState<boolean>(true)
-  const [currentTask, setCurrentTask] = useState<string>("PepsiCo Document")
+  const [currentTask, setCurrentTask] = useState<string>("Word Document")
   const [activityLog, setActivityLog] = useState<Array<{ time: Date; action: string }>>([])
   const [inactivityThreshold, setInactivityThreshold] = useState<number>(2) // minutes
   const { toast } = useToast()
