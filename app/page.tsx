@@ -119,7 +119,7 @@ export default function ActivityMonitor() {
               ) : (
                 <div className="flex items-center gap-2 text-red-600">
                   <AlertTriangle className="h-5 w-5" />
-                  <span>User appears to be away from the document</span>
+                  <span>User appears to be away from their Laptop</span>
                 </div>
               )}
             </div>
